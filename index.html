@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Era Uma Vez...</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+    body {
+      font-family: 'Fredoka One', cursive;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-pink-100 via-yellow-100 to-blue-100 min-h-screen flex flex-col items-center justify-start py-10 px-4">
+
+  <h1 class="text-4xl md:text-5xl font-bold text-pink-600 mb-4 text-center drop-shadow">
+     ✨Era Uma Vez...✨
+  </h1>
+
+  <p class="text-lg text-purple-700 mb-8 text-center max-w-2xl">
+    Solte a imaginação e deixe a magia acontecer!
+O Era Uma Vez é  um Gerador de Histórias Infantis usa inteligência artificial para criar histórias únicas a partir do tema que você escolher. Basta digitar uma ideia e em instantes uma nova aventura será criada.
+  </p>
+
+  <div class="bg-white rounded-3xl shadow-xl p-6 md:p-8 w-full max-w-xl">
+    <label for="tema" class="block text-lg text-purple-600 mb-2">Tema da história:</label>
+    <input
+      type="text"
+      id="tema"
+      placeholder="Ex: Um dragão que aprende a dividir"
+      class="w-full p-3 rounded-xl border-2 border-purple-300 focus:ring-4 focus:ring-purple-200 focus:outline-none text-gray-700 mb-4"
+      required
+    >
+
+    <button
+      onclick="gerarHistoria()"
+      class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl transition duration-300 shadow-md"
+    >
+       Gerar História
+    </button>
+
+    <div id="historia" class="mt-6 text-gray-800 space-y-4 leading-relaxed text-justify">
+      <!-- História gerada aparece aqui -->
+    </div>
+  </div>
+
+  <footer class="mt-12 text-center text-sm text-purple-800">
+    <p class="mb-2">© 2025 - Projeto educacional criado com carinho 💖</p>
+    <p>Desenvolvido por Ana Paula Maximo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
