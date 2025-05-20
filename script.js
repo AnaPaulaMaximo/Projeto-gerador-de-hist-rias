@@ -9,7 +9,7 @@ async function gerarHistoria() {
   }
 
   try {
-    const response = await fetch('http://localhost:5000/historia', {
+    const response = await fetch('https://backend-gerador-de-historias.vercel.app/historia', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
